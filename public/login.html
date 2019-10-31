@@ -28,8 +28,9 @@
 <!--===============================================================================================-->
 
 	<meta name="google-signin-scope" content="profile email">
-	<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="809607298570-q3qc8fc1552eeknok3b8j1r712o5qsic.apps.googleusercontent.com">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 
 </head>
 <body style="background-color: #666666;">
@@ -107,7 +108,7 @@
 		</div>
 	</div>
 
-
+<!--
 	<script>
 		function onSignIn(googleUser) {
 			// Useful data for your client-side scripts:
@@ -121,11 +122,13 @@
 
 			// The ID token you need to pass to your backend:
 			var id_token = googleUser.getAuthResponse().id_token;
-			console.log("ID Token: " + id_token);
+			//console.log("ID Token: " + id_token);
+
+			requestFirebase(id_token);
 		}
 	</script>
 
-	
+-->
 	
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -143,6 +146,8 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
+	<script type="text/javascript" src="js/login.js"></script>
 
 </body>
 </html>
